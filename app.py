@@ -85,7 +85,7 @@ if pdf is not None:
     st.write(summarized_docs)
 
     # create embeddings
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(openai_api_key=st.secrets["openai_secret_key"])
     knowledge_base = FAISS.from_texts(chunks, embeddings)
 
     # show user input
