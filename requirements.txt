@@ -5,3 +5,4 @@ streamlit-extras
 langchain
 PyPDF2
 tiktoken
+faiss
