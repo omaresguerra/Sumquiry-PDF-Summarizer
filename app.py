@@ -76,7 +76,7 @@ if pdf is not None:
       
     # create docs
     docs = [Document(page_content=t) for t in chunks[:3]]
-    llm = OpenAI(temperature=0)
+    llm = OpenAI(temperature=0, openai_api_key=st.secrets["openai_secret_key"])
 
     # show summarize doc
     chain = load_summarize_chain(llm, chain_type="map_reduce")
