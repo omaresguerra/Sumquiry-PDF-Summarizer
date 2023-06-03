@@ -4,3 +4,4 @@ pillow==9.4.0
 streamlit-extras
 langchain
 PyPDF2
+tiktoken
