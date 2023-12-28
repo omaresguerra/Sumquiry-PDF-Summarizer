@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_extras.add_vertical_space import add_vertical_space
 
 from PyPDF2 import PdfReader
 from PIL import Image
@@ -43,10 +42,9 @@ with st.sidebar:
             <br><p style='text-align: left;'>With Sumquiry, you can quickly obtain concise and accurate summaries of lengthy documents, saving valuable time. \
             But that's not all - you can ask detailed questions about the content and receive insightful responses, \
             transforming your research experience into an interactive and efficient journey. Say goodbye to information overload \
-            and hello to a seamless exploration of knowledge with Sumquiry as your trusted companion.</p>
+            and hello to a seamless exploration of knowledge with Sumquiry as your trusted companion.</p> <br><br>
     """, unsafe_allow_html=True)
     
-    add_vertical_space(5)
     st.markdown("<p> Made by <a href='https://omaresguerra.github.io'>Omar Esguerra</a> </p>", unsafe_allow_html=True)
 
 # Clear input text
